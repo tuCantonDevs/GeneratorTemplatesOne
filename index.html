@@ -11,7 +11,8 @@
     <title>Generador de Templates</title>
     <style>
       .noMostrar{
-        display: none;
+        width: 0px;
+        height: 0px;
       }
     </style>
   </head>
@@ -45,18 +46,34 @@
           <div class="row">
             <div class="input-field col s4">
               <input id="i_1" type="text" class="validate" required>
-              <label for="i_1">Información casa UNO</label>
+              <label for="i_1">Ubicación Casa UNO</label>
             </div>
             <div class="input-field col s4">
               <input id="i_2" type="text" class="validate" required>
-              <label for="i_2">Información casa DOS</label>
+              <label for="i_2">Ubicación Casa DOS</label>
             </div>
             <div class="input-field col s4">
               <input id="i_3" type="text" class="validate" required>
-              <label for="i_3">INFORMACIÓN casa TRES</label>
+              <label for="i_3">Ubicación Casa TRES</label>
             </div>
           </div>
         </form>
+        <form class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="p_1" type="text" class="validate" required>
+                <label for="p_1">Precio Casa UNO</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="p_2" type="text" class="validate" required>
+                <label for="p_2">Precio Casa DOS</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="p_3" type="text" class="validate" required>
+                <label for="p_3">Precio Casa TRES</label>
+              </div>
+            </div>
+          </form>
     </div>
     <div id="buttons">
       <button class="btn waves-effect waves-light amber" type="submit" name="action" onclick="generar()">Generar

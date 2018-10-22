@@ -1,19 +1,17 @@
 
+var template;
 function generar(){
   let idCasaUno  = document.getElementById('id_1').value,
       idCasaDos  = document.getElementById('id_2').value,
       idCasaTres = document.getElementById('id_3').value,
       iCasaUno   = document.getElementById('i_1').value,
       iCasaDos   = document.getElementById('i_2').value,
-      iCasaTres  = document.getElementById('i_3').value;
+      iCasaTres  = document.getElementById('i_3').value,
+      pCasaUno   = document.getElementById('p_1').value,
+      pCasaDos   = document.getElementById('p_2').value,
+      pCasaTres  = document.getElementById('p_3').value;
 
-  console.log(idCasaUno);
-  console.log(idCasaDos);
-  console.log(idCasaTres);
-  console.log(iCasaUno);
-  console.log(iCasaDos);
-  console.log(iCasaTres);
-  var template = `
+  template = `
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -1540,6 +1538,7 @@ html,
                           <th>
                             <center data-parsed=""><img src="https://s3.amazonaws.com/bucket-storage-tucanton/casas/mailing/${idCasaUno}.jpg" align="center" class="float-center casas"></center>
                             <p class="text-center my-2">${iCasaUno}</p>
+                            <p class="text-center my-2">$${pCasaUno} MXN.</p>
                           </th>
                         </tr>
                         <br>
@@ -1551,6 +1550,7 @@ html,
                           <th>
                             <center data-parsed=""><img src="https://s3.amazonaws.com/bucket-storage-tucanton/casas/mailing/${idCasaDos}.jpg" align="center" class="float-center casas"></center>
                             <p class="text-center my-2">${iCasaDos}</p>
+                            <p class="text-center my-2">$${pCasaDos} MXN.</p>
                           </th>
                         </tr>
                         <br>
@@ -1562,6 +1562,7 @@ html,
                           <th>
                             <center data-parsed=""><img src="https://s3.amazonaws.com/bucket-storage-tucanton/casas/mailing/${idCasaTres}.jpg" align="center" class="float-center casas"></center>
                             <p class="text-center my-2">${iCasaTres}</p>
+                            <p class="text-center my-2">$${pCasaTres} MXN.</p>
                           </th>
                         </tr>
                         <br>
@@ -1715,15 +1716,12 @@ html,
 
   `
 
-console.log(template);
+$('#template').empty();
 
 $('#template').append(`<textarea class="noMostrar" id="template1">${template}</textarea>`);
-
-var gT = document.getElementById('template1');
-
-gT.select();
-
-document.execCommand('copy');
-
-confirm('Template Copiado');
+  var gT = document.getElementById('template1');
+  gT.select();
+  document.execCommand("copy");
+  var toastHTML = '<span>Template copiado</span>';
+  M.toast({html: toastHTML});
 }
