@@ -1454,7 +1454,7 @@ html,
                       <table>
                         <tr>
                           <th>
-                            <center data-parsed=""><a href="https://www.tucanton.com/"><img src="http://webservicesapp.jc9nhvmspb.us-east-1.elasticbeanstalk.com/api/pixels/localImages/download/tucanton_logo_template.png/{{id}}/{{campaignId}}/{{segmentId}}" align="center" class="float-center logo"></a></center>
+                            <center data-parsed=""><a href="https://www.tucanton.com/"><img src="http://webservicesapp.jc9nhvmspb.us-east-1.elasticbeanstalk.com/api/pixels/localImages/download/tucanton_logo_template.png/{{id}}/{{campaignId}}/{{segmentId}}/{{experimentId}}" align="center" class="float-center logo"></a></center>
                           </th>
                         </tr>
                       </table>
@@ -1504,7 +1504,7 @@ html,
                     <table>
                       <tr>
                         <td>
-                          <center data-parsed=""><a href="https://www.tucanton.com/actualizardatos/interesado/{{id}}/{{campaignId}}/{{segmentId}}" align="center" class="float-center" id="callAction">Actualizar datos</a></center>
+                          <center data-parsed=""><a href="https://www.tucanton.com/actualizardatos/interesado/{{id}}/{{campaignId}}/{{segmentId}}/{{experimentId}}" align="center" class="float-center" id="callAction">Actualizar datos</a></center>
                         </td>
                       </tr>
                     </table>
@@ -1682,7 +1682,7 @@ html,
                       <tr>
                       <th>
                         <p class="text-center">Todos los derechos reservados tuCantón 2018<br>
-                        <br> <a href="https://tucanton.com/mailing/unsubscribe/{{id}}/{{campaignId}}/{{segmentId}}">No deseo recibir correos</a></p>
+                        <br> <a href="https://tucanton.com/mailing/unsubscribe/{{id}}/{{campaignId}}/{{segmentId}}/{{experimentId}}">No deseo recibir correos</a></p>
                         </th>
                       </tr>
                         <tr>
